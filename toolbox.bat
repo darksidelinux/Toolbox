@@ -169,12 +169,3 @@ goto power
 :sdlogout
 shutdown -l
 goto power
-
-:instagram
-cls && color a
-echo  ==================================================================================================
-echo                                 Welcome to DarkHub Toolbox v0.01
-echo   User: %username% - Machine: %computername% - Main Drive: %HOMEDRIVE%\ - Date: %DATE% - %TIME%
-echo  ==================================================================================================
-set /p instools=Choose:
-if %instools%==1 goto instagram
