@@ -3,3 +3,4 @@ DarkHub Toolbox allows you to implement, run, or penetration test more than 100 
 
 ## Tested Operating Systems
 - Windows 10 22H2
+- Windows 10 20H2
