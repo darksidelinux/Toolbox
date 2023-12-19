@@ -1,7 +1,29 @@
+@ECHO OFF
+REM BFCPEOPTIONSTART
+REM Advanced BAT to EXE Converter www.BatToExeConverter.com
+REM BFCPEEXE=
+REM BFCPEICON=
+REM BFCPEICONINDEX=-1
+REM BFCPEEMBEDDISPLAY=0
+REM BFCPEEMBEDDELETE=1
+REM BFCPEADMINEXE=0
+REM BFCPEINVISEXE=0
+REM BFCPEVERINCLUDE=0
+REM BFCPEVERVERSION=1.0.0.0
+REM BFCPEVERPRODUCT=Product Name
+REM BFCPEVERDESC=Product Description
+REM BFCPEVERCOMPANY=Your Company
+REM BFCPEVERCOPYRIGHT=Copyright Info
+REM BFCPEWINDOWCENTER=1
+REM BFCPEDISABLEQE=0
+REM BFCPEWINDOWHEIGHT=30
+REM BFCPEWINDOWWIDTH=120
+REM BFCPEWTITLE=Window Title
+REM BFCPEOPTIONEND
 @echo off
-title DarkHub Toolbox - Waiting for Admin Privileges...
+title DarkHub Toolbox %PRVersion% - Waiting for Admin Privileges...
 if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
-title DarkHub Toolbox
+title DarkHub Toolbox %PRVersion%
 mode con: cols=70 lines=4
 cls && color 01
 echo  ====================================================================
@@ -97,7 +119,7 @@ echo  ==========================================================================
 echo.
 echo  [34m[1][0m Mozilla Firefox                                        [33m[B][0m Back
 echo  [34m[2][0m Opera
-echo  [34m[2][0m Opera GX
+echo  [34m[3][0m Opera GX
 echo.
 echo.
 echo.
